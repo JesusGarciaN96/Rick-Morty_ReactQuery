@@ -4,7 +4,7 @@ import { getAllCharacters } from '../services/characters.service';
 
 export default function Character() {
 	//i Primera parámetros una key, segundo una función asincrona (puedes ser llamada fetch, promesa, etc)
-	const { data, status } = useQuery('getCharacters', getAllCharacters);
+	const { data } = useQuery('getCharacters', getAllCharacters);
 
 	return (
 		<div
