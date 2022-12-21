@@ -1,5 +1,6 @@
 import { useQuery } from 'react-query';
 
+import { ICharacterResult } from '../models/ICharacter';
 import { getAllCharacters } from '../services/characters.service';
 
 export default function Character() {
@@ -16,7 +17,7 @@ export default function Character() {
 				flexWrap: 'wrap',
 			}}
 		>
-			{data.results.map((character: { id: number; name: string; image: string }) => (
+			{data.results.map((character: ICharacterResult) => (
 				<div key={character.id} style={{ margin: '30px 10px' }}>
 					<img
 						style={{ width: '150px', height: '150px', borderRadius: '50%', margin: '15px' }}
