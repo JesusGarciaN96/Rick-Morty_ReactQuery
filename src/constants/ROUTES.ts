@@ -1,5 +1,5 @@
 export const ROUTES = {
 	ROOT: '/',
-	CHARACTER: '/home',
-	CHARACTER_DETAIL: '/home/:id',
+	CHARACTER: '/character',
+	CHARACTER_DETAIL: '/character/:id',
 };
